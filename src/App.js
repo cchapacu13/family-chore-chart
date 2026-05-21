@@ -18,7 +18,7 @@ const defaultChores = [
 const KIDS = ["chrisjr", "amelia"];
 const KID_LABELS = { chrisjr: "Chris Jr", amelia: "Amelia" };
 const KID_COLORS = { chrisjr: "#f59e0b", amelia: "#3b82f6" };
-const PARENT_PIN = "1234";
+const PARENT_PIN = "2014";
 const KID_PIN = "0000";
 
 function formatDollars(amt) { return `$${Number(amt).toFixed(2)}`; }
