@@ -70,18 +70,30 @@ chore-chart/
 ## Current Chore List
 | Chore | Pay | Assigned To |
 |---|---|---|
-| Make bed | $0.25 | Both |
-| Clean room | $0.75 | Both |
-| Water plants | $0.25 | Both |
-| Feed pets | $0.25 | Both |
-| Wash pet bowls | $0.50 | Both |
-| Wipe table after meals | $0.25 | Chris Jr |
-| Put away toys | $0.25 | Chris Jr |
-| Take out trash | $0.50 | Amelia |
-| Sweep/vacuum a room | $0.50 | Amelia |
-| Unload dishwasher | $0.50 | Amelia |
-| Fold laundry | $0.50 | Both |
-| Wipe bathroom sink | $0.25 | Both |
+| Making the bed | $0.25 | Both |
+| Vacuum room | $0.50 | Both |
+| Vacuum house | $1.00 | Both |
+| Clean Room | $1.00 | Both |
+| Laundry (Folding and taking clothes to closet) | $3.00 | Both |
+| Feed Pets (Food & Water/Pet) | $0.25 | Both |
+| Cleaning Dog Bowls | $0.50 | Both |
+| Brush Dogs | $1.00 | Amelia |
+| Clean car interior | $0.50 | Both |
+| Read for 30 minutes | $0.50 | Both |
+| Read for 1 hour | $1.00 | Both |
+| Wipe bathroom counter | $0.25 | Both |
+| Set table for dinner | $0.50 | Both |
+| Clean table after dinner | $0.50 | Both |
+| Take out trash | $0.50 | Both |
+| Goal Score | $3.00 | Chris Jr |
+| Assist | $1.50 | Chris Jr |
+| Basketball basket | $0.50 | Chris Jr |
+| Rebound | $0.50 | Chris Jr |
+| Game Win | $1.00 | Chris Jr |
+| Pick up dog poop | $1.00 | Amelia |
+| Fill water container | $0.25 | Both |
+| Pick up dog toys | $0.25 | Both |
+| Wash dishes | $1.00 | Amelia |
 
 ## Common Tasks to Ask Claude Code
 - "Add a new chore called X for [kid] at $[amount] and push to GitHub"
