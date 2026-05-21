@@ -1,21 +1,30 @@
+import { createClient } from "redis";
+
+let client;
+async function getClient() {
+  if (!client) {
+    client = createClient({
+      url: process.env.REDIS_URL,
+    });
+    await client.connect();
+  }
+  return client;
+}
+
 export default async function handler(req, res) {
-  const { Redis } = await import("@upstash/redis");
-  const redis = new Redis({
-    url: process.env.UPSTASH_REDIS_REST_URL,
-    token: process.env.UPSTASH_REDIS_REST_TOKEN,
-  });
+  const redis = await getClient();
 
   if (req.method === "GET") {
     const { key } = req.query;
     if (!key) return res.status(400).json({ error: "Missing key" });
     const value = await redis.get(key);
-    return res.status(200).json({ value });
+    return res.status(200).json({ value: value ? JSON.parse(value) : null });
   }
 
   if (req.method === "POST") {
     const { key, value } = req.body;
     if (!key) return res.status(400).json({ error: "Missing key" });
-    await redis.set(key, value);
+    await redis.set(key, JSON.stringify(value));
     return res.status(200).json({ ok: true });
   }
 
